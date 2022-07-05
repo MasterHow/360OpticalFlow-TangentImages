@@ -62,7 +62,9 @@ class Logger:
         self.logger.info(message)
 
     def warn(self, message):
-        self.logger.warning(message)
+        # 关闭warning
+        # self.logger.warning(message)
+        return 0
 
     def print_stack(self):
         print("---traceback---")

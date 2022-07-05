@@ -23,10 +23,19 @@ if __name__ == "__main__":
 
     src_erp_image = image_io.image_read(test_data_root_dir + "0000_rgb_pano.jpg")
     tar_erp_image = image_io.image_read(test_data_root_dir + "0001_rgb_pano.jpg")
-    src_forward_flow_gt=  flow_io.read_flow_flo(test_data_root_dir + "0000_opticalflow_forward_pano.flo")
+    src_forward_flow_gt = flow_io.read_flow_flo(test_data_root_dir + "0000_opticalflow_forward_pano.flo")
 
     result_opticalflow_filepath = test_data_root_dir + "0001_rgb_forward.flo"
     result_opticalflow_vis_filepath = test_data_root_dir + "0001_rgb_forward.flo.jpg"
+
+    # test_data_root_dir =  DATA_DIR + "replica_360/apartment_0_circ/"
+    #
+    # src_erp_image = image_io.image_read(test_data_root_dir + "0000_rgb_pano.jpg")
+    # tar_erp_image = image_io.image_read(test_data_root_dir + "0001_rgb_pano.jpg")
+    # src_forward_flow_gt = flow_io.read_flow_flo(test_data_root_dir + "0000_opticalflow_forward_pano.flo")
+    #
+    # result_opticalflow_filepath = test_data_root_dir + "0001_rgb_forward.flo"
+    # result_opticalflow_vis_filepath = test_data_root_dir + "0001_rgb_forward.flo.jpg"
 
     # 1) estimate optical flow
     flow_estimator = flow_estimate.PanoOpticalFlow()
