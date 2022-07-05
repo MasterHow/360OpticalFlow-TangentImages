@@ -2,6 +2,14 @@
 
 [Video](https://youtu.be/RczNEQefOTo) | [Paper](https://arxiv.org/pdf/2112.14331.pdf)
 
+This repo is fork form the [official code](https://github.com/yuanmingze/360OpticalFlow-TangentImages), 
+I am attaching my complete test code repository here, 
+so that everyone can help to check the problem and test the accuracy on the entire Replica360 dataset.
+
+![EPE Test Result](/images/epe-result.png)
+
+The following is the original readme file:
+
 # 1. Introduction
 
 This repository contains the source code for BMVC 2021 paper "360° Optical Flow using Tangent Images".
